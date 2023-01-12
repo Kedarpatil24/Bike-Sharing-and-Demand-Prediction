@@ -6,44 +6,54 @@
 
 The dataset contains weather information (Temperature, Humidity, Windspeed, Visibility, Dewpoint, Solar radiation, Snowfall, Rainfall), the number of bikes rented per hour, and date information. Based on the given data we have to build a machine learning model which will be helping us to predict the number of bikes that must be made available by predicting the demand for bikes rented per day.
 
-# Introduction
-
-Currently, the bike-sharing scheme is well-received throughout the world. It is a shared bike service for individuals, which is free of charge and for a short- term basis at a minimal rate. Most bike- sharing systems permit people to borrow and return a bike from a bike station to another station that belongs to the same network. Bike-sharing gains a vast range of attention in recent years as part of initiatives to boost the use of cycles, improve the first mile/last mile link to other modes of transportation, and minimize the negative effect of transport activities on the environment. Bike-sharing has significant impacts on establishing a larger cycling community, increasing the use of transportation, minimizing greenhouse gas emissions, enhancing public health, and also traffic troubles.
-
 # Objective
 
 To predict the bike demands for the next day based on certain conditions like weather forecasting, holidays and active users in particular areas by analysing the previous data.
+
+# Data Set Description:
+
+Date : year-month-day Rented Bike count - Count of bikes rented at each hour Hour - Hour of the day Temperature-Temperature in Celsius Humidity - % Windspeed - m/s Visibility - 10m Dew point temperature - Celsius Solar radiation - MJ/m2 Rainfall - mm Snowfall - cm Seasons - Winter, Spring, Summer, Autumn Holiday - Holiday/No holiday Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours)
+
+# Factors Affecting:
+
+Seasons : Bike rental is high during the summer and least during the Spring season.
+
+Temperature : As the temperature increases the bike count is gradually increases .
+
+Hours : We observed that there is a peak in the bike rentals counts at around 8am morning and at around 5pm evening.
+
+Weather : When the weather is clear or sunny the bike rental is high where as in the heavy rain and snowfall the bike rental is very low.
+
+Working Day : Bike rental counts on working and non-working days and we observed that the outliers are present in working day.
+
+Holiday : Bike rental counts on holidays and non-holidays. Holidays correspond to non-working days. Also outliers are present in non holidays.
+
+# Steps Involved:
+
+Exploratory Data Analysis : After loading and reading the dataset in notebook, we performed EDA. Comparing target variable which is bike rentals counts with other independent variables. This process helped us figuring out various aspects and relationships among the target and the independent variables and also we observed the distribution of variables. It gave us a better idea that how feature behaves with the target variable.
+
+Preprocessing data : Dataset contains a no null values also no duplicate values are found to disturb the accuracy . Changing column names for easy handling. Dropping the unwanted columns from the dataset.
+
+Features selection : With the help of exploratory data analysis we analyzed the categorical as well as numerical features in the dataset.
+
+One hot encoding : In this dataset some categorical variables like seasons, holiday and function day, we change it with numerical database.
+
+Correlation Analysis : We plot the heatmap to find the correlation between both dependent variable and independent variables.
+
+Train test Split : In train test split we take ‘x’ as dependent variables and ‘y’ take as independent variable then train the model.
+
+
+# Correlation Analysis
+
+
 
 # Exploratory Data Analysis
 
 Exploratory Data Analysis (EDA) plays a vital role in the analysis of the data variables which are important from the aspect of feature engineering. It will help us to distribute and relate between dependent and independent variables. We have gone through an analysis of every independent as well as the dependent variable to check which independent factor affects the dependent factor.
 
-# Feature Engineering
 
-# One Hot Encoding of categorical feature:
-
-One hot encoding is useful for data that has no relationship to each other. Machine learning algorithms treat the order of numbers as an attribute of significance. In other words, they will read a higher number as better or more important than a lower number.
-
-While this is helpful for some ordinal situations, some input data does not have any ranking for category values, and this can lead to issues with predictions and poor performance. That’s when one hot encoding saves the day.
-
-One hot encoding makes our training data more useful and expressive, and it can be rescaled easily. By using numeric values, we more easily determine a probability for our values. In particular, one hot encoding is used for our output values, since it provides more nuanced predictions than single labels.
-
-
-
-# Ordinal Encoding:
-In ordinal encoding, each unique category value is assigned an integer value.
-For example, “red” is 1, “green” is 2, and “blue” is 3.
-This is called an ordinal encoding or an integer encoding and is easily reversible. Often, integer values starting at zero are used.
-
-For some variables, an ordinal encoding may be enough. The integer values have a natural ordered relationship between each other and machine learning algorithms may be able to understand and harness this relationship.
-
-# Machine Learning Algorithm
-
-Four statistical models are used to predict the trip duration. (a) Linear regression (b) Decision Tree (c) Random Forest (RF). (d) Gradient boosting machines (e) Extreme Gradient Boosting (XGBoost)
 
 # Conclusion:
 
-The analysis is done with Seoul Bike data. Six regression techniques Linear Regression, Polynomial regression, Decision Tree, Random Forest, Gradient Boosting, XGB are used to predict the trip duration.This statistical data analysis shows interesting outcomes in prediction methods and also in an exploratory analysis.
-
-The experimental results prove that the XGB model predicts best the trip duration with the highest R2 and with less error rate compared to Linear Regression, Decision Tree, Random Forest, Gradient Boosting.
+Bike rental count is mostly correlated with the time of the day as it is peak at 10 am morning and 8 pm at evening. We observed that bike rental count is high during working days than non working day. We see that people generally prefer to bike at moderate to high temperatures. We observed highest rental counts between 32 to 36 degrees Celsius. It is observed that highest number bike rentals counts in Autumn/fall Summer Seasons and the lowest in Spring season. We observed that the highest number of bike rentals on a clear day and the lowest on a snowy or rainy day. We observed that with increasing humidity, the number of bike rental counts decreases. Hour of the day holds most importance among all the features for prediction of dataset.
 
