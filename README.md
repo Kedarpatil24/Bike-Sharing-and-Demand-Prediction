@@ -73,10 +73,6 @@ In train test split we take ‘x’ as dependent variables and ‘y’ take as i
 
 <img width="943" alt="202718861-d1828049-e67d-4efb-9b70-5d370a79ca93" src="https://user-images.githubusercontent.com/111070329/211995443-5a89384a-86fd-40b6-97d0-0942832b2ac3.png">
 
-# Exploratory Data Analysis
-
-Exploratory Data Analysis (EDA) plays a vital role in the analysis of the data variables which are important from the aspect of feature engineering. It will help us to distribute and relate between dependent and independent variables. We have gone through an analysis of every independent as well as the dependent variable to check which independent factor affects the dependent factor.
-
 
 
 # Conclusion:
