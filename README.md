@@ -1,22 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![202717555-9cf5d41a-ff4b-47c8-9a85-62ad5ef1a206](https://user-images.githubusercontent.com/111070329/211984610-09d1b583-8c80-41f8-bc13-25f21a03c98b.png)
 
 # Bike-Sharing-and-Demand-Prediction
 
