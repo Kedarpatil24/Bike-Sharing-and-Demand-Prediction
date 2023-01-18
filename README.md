@@ -79,9 +79,16 @@ In train test split we take ‘x’ as dependent variables and ‘y’ take as i
 
 Bike rental count is mostly correlated with the time of the day as it is peak at 10 am morning and 8 pm at evening. We observed that bike rental count is high during working days than non working day. We see that people generally prefer to bike at moderate to high temperatures. We observed highest rental counts between 32 to 36 degrees Celsius. It is observed that highest number bike rentals counts in Autumn/fall Summer Seasons and the lowest in Spring season. We observed that the highest number of bike rentals on a clear day and the lowest on a snowy or rainy day. We observed that with increasing humidity, the number of bike rental counts decreases. Hour of the day holds most importance among all the features for prediction of dataset.
 
-# References
+# 📜 Credits
+Kedar Patil | Data Science Enthusiast
 
-1. GeeksforGeeks
-2. Kaggle
+www.linkedin.com/in/kedarpati24
+
+
+# 📚 References 
+
+1. GeekforGeeks (https://www.geeksforgeeks.org/removing-stop-words-nltk-python/?ref=lbp)
+
+2. Kaggle (https://www.kaggle.com/)
+
 3. Analytics Vidya
-
